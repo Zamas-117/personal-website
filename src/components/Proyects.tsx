@@ -134,7 +134,8 @@ function Proyects({}: Props) {
                     <FontAwesomeIcon
                       icon={faExternalLinkAlt}
                       className="live-icon"
-                    />{" "}
+                    />
+                    {""}
                     Ver Proyecto
                   </a>
                 )}
