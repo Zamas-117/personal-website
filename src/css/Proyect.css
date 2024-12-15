@@ -82,3 +82,33 @@
   height: 50px; /* Alto del logo */
   object-fit: contain; /* Ajusta el logo sin deformarlo */
 }
+
+@media (max-width: 724px) {
+  #card-container {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+}
+.proyects {
+  margin-top: 106vh;
+}
+
+/*efect contraste*/
+.btn-github,
+.btn-live {
+  margin-top: 10px;
+  margin-right: 3px;
+}
+
+.btn-github:hover,
+.btn-github:active,
+.btn-live:hover,
+.btn-live:active {
+  background-color: black !important;
+  transform: scale(1); /* Efecto de escala */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+  color: #ffff !important;
+}

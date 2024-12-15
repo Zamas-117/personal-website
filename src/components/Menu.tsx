@@ -44,12 +44,13 @@ function Menu({}: Props) {
             </a>
           </div>
         </div>
-        <div className="hero-image">
+        <div className="hero-image" id="hero-container">
           <div className="image-wrapper">
             <img src="/cesar_foto.png" alt="Cesar Andrade" />
           </div>
         </div>
       </div>
+      <span id="proyect"></span>
     </div>
   );
 }

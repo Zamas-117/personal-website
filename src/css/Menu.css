@@ -73,6 +73,13 @@
   color: #ffff;
 }
 
+#proyect {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 89vh;
+}
+
 .btn {
   background-color: #b533ff;
   color: #000;
@@ -122,4 +129,19 @@ os sociales */ .hero-socials {
   height: 90%;
   border-radius: 50%;
   object-fit: cover;
+}
+
+@media (min-width: 725px) {
+  #hero-container {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 724px) {
+  #hero-container {
+    display: none;
+  }
+  #proyect {
+    margin-top: 85vh;
+  }
 }
