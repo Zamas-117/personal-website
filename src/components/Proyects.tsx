@@ -87,7 +87,7 @@ function Proyects({}: Props) {
 
       <div className="container_proyects">
         {projects.map((project) => (
-          <div className="card" key={project.id}>
+          <div className="card" key={project.id} id="card-container">
             <img
               src={project.image}
               className="card-img-top"
@@ -134,7 +134,8 @@ function Proyects({}: Props) {
                     <FontAwesomeIcon
                       icon={faExternalLinkAlt}
                       className="live-icon"
-                    />{" "}
+                    />
+                    {""}
                     Ver Proyecto
                   </a>
                 )}

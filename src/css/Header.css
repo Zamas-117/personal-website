@@ -3,6 +3,10 @@ a {
   text-decoration: none;
 }
 
+#container-list {
+  justify-content: flex-end;
+}
+
 /* Estilo principal para los enlaces */
 .menu__link {
   color: #fff !important;
@@ -39,4 +43,98 @@ span {
 
 .menu-name {
   color: #ffffff !important;
+}
+
+#img-logo {
+  width: auto;
+  height: auto;
+}
+
+#img-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+#img-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 725px) {
+  #img-logo {
+    display: none;
+  }
+  #container-list {
+    margin-right: 5%;
+  }
+  #container-header {
+    position: fixed !important;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Corrige el centrado */
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro semi-transparente */
+    border-radius: 50px; /* Bordes redondeados */
+
+    padding: 0.5rem 0; /* Espaciado uniforme */
+    z-index: 999000; /* Asegura que esté por encima */
+  }
+}
+
+@media (max-width: 724px) {
+  #container-name,
+  #list-menu {
+    display: none;
+  }
+
+  #container-list {
+    position: fixed !important;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Corrige el centrado */
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 400px; /* Ancho máximo para evitar que sea demasiado grande */
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro semi-transparente */
+    border-radius: 50px; /* Bordes redondeados */
+    display: flex;
+    flex-wrap: nowrap; /* Evita el salto de línea */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 0.5rem 0; /* Espaciado uniforme */
+    z-index: 999000; /* Asegura que esté por encima */
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center;
+    margin: 0 0.5rem; /* Margen entre elementos */
+    white-space: nowrap; /* Evita saltos de línea */
+  }
+
+  .nav-item a {
+    margin: 0;
+    padding: 0.5rem 0.3rem; /* Espaciado interno del texto */
+    text-align: center; /* Centra el texto */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+  }
+}
+
+@media (max-width: 440px) {
+  #container-list {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 360px) {
+  #container-list {
+    font-size: 0.6em;
+  }
+  #img-wrapper {
+    width: 30px;
+    height: 30px;
+  }
 }
