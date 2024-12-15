@@ -1,8 +1,6 @@
 import "../css/Header.css";
 
-type Props = {
-  name: string[];
-};
+type Props = {};
 
 function Header_principal({}: Props) {
   return (
