@@ -1,0 +1,42 @@
+/* Resetear estilo de los enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Estilo principal para los enlaces */
+.menu__link {
+  color: #fff !important;
+  line-height: 2;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu__link::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #b533ff;
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0;
+  transition: right 0.4s, width 0.4s, left 0.4s;
+}
+
+.menu__link:hover {
+  color: #ffff; /* Cambia el color del texto al hacer hover */
+}
+
+.menu__link:hover::before {
+  width: 90%; /* Anima la línea subrayada */
+  left: 0;
+}
+
+span {
+  color: #b533ff;
+  text-shadow: 0 0 5px #b533ff, 0 0 15px #b533ff, 0 0 40px #ff00ff;
+}
+
+.menu-name {
+  color: #ffffff !important;
+}
