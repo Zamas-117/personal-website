@@ -8,8 +8,9 @@ from email.mime.text import MIMEText
 # Cargar las variables del archivo .env
 load_dotenv()
 
+# Configurar Flask
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # Habilita CORS para todas las rutas
 
 @app.route('/', methods=['POST'])
 def contact():
@@ -20,19 +21,18 @@ def contact():
     if not email or not message:
         return jsonify({"error": "Email y mensaje son obligatorios"}), 400
 
-    # Cargar las credenciales desde las variables de entorno
-    sender_email = os.getenv("SENDER_EMAIL")
-    sender_password = os.getenv("SENDER_PASSWORD")
-    receiver_email = "andradecesar162@gmail.com"  # Tu correo personal
-
     try:
-        # Crea el correo
+        sender_email = os.getenv("SENDER_EMAIL")
+        sender_password = os.getenv("SENDER_PASSWORD")
+        receiver_email = "andradecesar162@gmail.com"
+
+        # Configurar el correo
         msg = MIMEText(f"Mensaje enviado desde el sitio web.\n\nMensaje:\n{message}")
         msg['Subject'] = "Nuevo mensaje de contacto"
         msg['From'] = sender_email
         msg['To'] = receiver_email
 
-        # Configura el servidor SMTP
+        # Enviar el correo
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         server.login(sender_email, sender_password)
@@ -40,8 +40,10 @@ def contact():
         server.quit()
 
         return jsonify({"message": "¡Correo enviado correctamente!"}), 200
+
     except Exception as e:
         return jsonify({"error": f"Error al enviar el correo: {str(e)}"}), 500
 
+# Ejecutar la aplicación solo si se usa localmente
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
