@@ -24,12 +24,12 @@ def contact():
     try:
         sender_email = os.getenv("SENDER_EMAIL")
         sender_password = os.getenv("SENDER_PASSWORD")
-        receiver_email = "andradecesar162@gmail.com"
+        receiver_email = email
 
         # Configurar el correo
-        msg = MIMEText(f"Mensaje enviado desde el sitio web.\n\nMensaje:\n{message}")
+        msg = MIMEText(f"Mensaje enviado desde el sitio web: cesar-andrade.netlify.app/\n\nMensaje:\n{message}")
         msg['Subject'] = "Nuevo mensaje de contacto"
-        msg['From'] = sender_email
+        msg['From'] = email
         msg['To'] = receiver_email
 
         # Enviar el correo
