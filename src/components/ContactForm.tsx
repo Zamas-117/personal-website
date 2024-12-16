@@ -6,24 +6,42 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  // Manejar cambios en los campos del formulario
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  // Manejar el envío del formulario
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:5000", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://personal-website-jfn3.onrender.com",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Error al enviar el formulario");
+      }
+
       const data = await response.json();
       alert(data.message || "¡Mensaje enviado!");
       setFormData({ email: "", message: "" }); // Reinicia el formulario
     } catch (error) {
-      alert("Error al enviar el mensaje");
+      // Asignar el tipo "Error" a la variable error
+      if (error instanceof Error) {
+        alert(`Error: ${error.message}`);
+      } else {
+        alert("Ocurrió un error desconocido");
+      }
     }
   };
 
