@@ -17,7 +17,7 @@ const projects = [
       "/logos/aws.png",
       "/logos/postgresql.svg",
       "/logos/google.png",
-      "/logos/python.png",
+      "/logos/django.png",
       "/logos/html5.png",
       "/logos/css.png",
       "/logos/js.png",
