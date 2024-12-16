@@ -59,6 +59,7 @@ function Skills({}: Props) {
           </div>
         ))}
       </div>
+      <span id="education"></span>
     </div>
   );
 }
