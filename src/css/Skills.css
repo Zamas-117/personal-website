@@ -1,0 +1,47 @@
+.skills-carousel {
+  text-align: center;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.skills-carousel h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  margin-right: 15px;
+  animation: scroll 17s linear infinite;
+}
+
+.carousel-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}

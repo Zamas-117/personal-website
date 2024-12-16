@@ -143,6 +143,7 @@ function Proyects({}: Props) {
             </div>
           </div>
         ))}
+        <span id="skills"></span>
       </div>
     </div>
   );

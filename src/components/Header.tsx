@@ -29,8 +29,8 @@ function Header_principal({}: Props) {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link menu__link" href="#">
-            Tecnologias
+          <a className="nav-link menu__link" href="#skills">
+            Habilidades
           </a>
         </li>
 
