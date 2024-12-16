@@ -3,6 +3,7 @@ import Menu from "./components/Menu";
 import Proyects from "./components/Proyects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Proyects />
       <Skills />
       <Education />
+      <ContactForm />
     </>
   );
 }
