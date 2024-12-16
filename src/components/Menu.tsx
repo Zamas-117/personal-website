@@ -13,9 +13,10 @@ function Menu({}: Props) {
             Soy <span className="highlight">Desarrollador</span>
           </h2>
           <p className="hero-description">
-            Soy un programador con conocimientos en diseño web y desarrollo de
-            aplicaciones. Además, apunto hacia nuevos horizontes como la
-            programación de videojuegos.
+            Soy desarrollador de software con experiencia en el desarrollo de
+            aplicaciones web, integración de bases de datos, despliegues en la
+            nube y soluciones personalizadas. Mi enfoque está en crear software
+            eficiente, escalable y adaptado a las necesidades del cliente.
           </p>
           <div className="hero-buttons">
             <a href="/cv" className="btn">
