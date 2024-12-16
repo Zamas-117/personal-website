@@ -44,4 +44,4 @@ def contact():
         return jsonify({"error": f"Error al enviar el correo: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
