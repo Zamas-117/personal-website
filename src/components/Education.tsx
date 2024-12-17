@@ -9,21 +9,40 @@ const education = [
     institution: "Universidad Autónoma de Ciudad Juárez",
     period: "2020 - 2024 cursando",
     description:
-      "Enfoque en desarrollo de software, bases de datos y metodologías ágiles.",
+      "Formación en desarrollo de software, bases de datos, metodologías ágiles y arquitectura de sistemas.",
   },
   {
     id: 2,
-    title: "AWS Certified Solutions Architect – Associate",
+    title: "AWS Technical Essentials",
     institution: "AWS",
-    period: "2023",
-    description: "Curso de certificación en arquitectura de soluciones en AWS.",
+    period: "2024",
+    description:
+      "Introducción a los servicios principales de AWS, como cómputo, almacenamiento y redes.",
   },
   {
     id: 3,
-    title: "Desarrollo Web Fullstack",
-    institution: "Platzi",
-    period: "2021",
-    description: "Curso completo de desarrollo web con Html,Css,JavaScript.",
+    title: "AWS Cloud Practitioner Essentials",
+    institution: "AWS",
+    period: "2024",
+    description:
+      "Conceptos básicos de la nube de AWS, seguridad, facturación y optimización de servicios.",
+  },
+  {
+    id: 4,
+    title: "Fundamentos profesionales del desarrollo de software",
+    institution: "Microsoft y LinkedIn",
+    period: "2023",
+    description:
+      "Principios del ciclo de desarrollo, programación estructurada y buenas prácticas de código.",
+  },
+  {
+    id: 5,
+    title:
+      "Introducción a las habilidades profesionales en el desarrollo de software",
+    institution: "Microsoft y LinkedIn",
+    period: "2023",
+    description:
+      "Habilidades esenciales: resolución de problemas, trabajo en equipo y metodologías ágiles.",
   },
 ];
 

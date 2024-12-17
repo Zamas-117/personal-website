@@ -11,7 +11,7 @@ const projects = [
     image: "/proyects/solid-steel/solid-steel-4.png",
     title: "E-commerce 'Solid-Steel'",
     description:
-      "En este proyecto se construyó toda una aplicación web de E-commerce abarcando inicio de sesión para los usuarios hasta el envío de los productos.",
+      "Aplicación de comercio electrónico para la venta de metales con integración de pagos (PayPal, Stripe), manejo de usuarios, y sistemas de envío.",
     link: "#",
     technologies: [
       "/logos/aws.png",
@@ -30,8 +30,9 @@ const projects = [
   {
     id: 2,
     image: "/proyects/koko-wings/koko-wings.png",
-    title: "Landing Page 'Koko Wings'",
-    description: "Este es un diseño de landing page responsiva para una marca.",
+    title: "Sitio de comida 'Koko Wings'",
+    description:
+      "Página web interactiva que muestra el catálogo completo de alimentos, incluyendo ofertas y variedad del menú de un restaurante.",
     link: "https://kokowings.netlify.app/",
     technologies: [
       "/logos/html5.png",
@@ -45,9 +46,9 @@ const projects = [
   {
     id: 3,
     image: "/proyects/pau/pau.png",
-    title: "Personal Web Site 'Pausings4u'",
+    title: "Blog personal 'Pausings4u'",
     description:
-      "Este es otro proyecto destacando habilidades en diseño y desarrollo.",
+      "Página web diseñada para una cantante, con un blog personal y secciones para destacar su trayectoria y contenido multimedia.",
     link: " https://pausings4u.com/",
     technologies: [
       "/logos/php.png",
@@ -64,7 +65,7 @@ const projects = [
     image: "/proyects/cecyte/cecyte.png",
     title: "Sistema de cuestionarios 'CecyteC'",
     description:
-      "Este es otro proyecto destacando habilidades en diseño y desarrollo.",
+      "Plataforma educativa para evaluar a los estudiantes mediante cuestionarios y determinar sus estilos de aprendizaje.",
     link: "https://cecyteccuestionarios.io/",
     technologies: [
       "/logos/php.png",
