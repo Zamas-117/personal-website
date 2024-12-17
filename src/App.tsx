@@ -4,6 +4,7 @@ import Proyects from "./components/Proyects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import ContactForm from "./components/ContactForm";
+import ChatBot from "./components/ChatBot";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Education />
       <ContactForm />
+      <ChatBot />
     </>
   );
 }
