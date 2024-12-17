@@ -12,16 +12,16 @@ function Menu({}: Props) {
             ¡Hola, soy <span className="highlight">Cesar Andrade!</span>
           </h1>
           <h2 className="hero-subtitle">
-            Soy <span className="highlight">Desarrollador</span>
+            Disponible para <span className="highlight">Desarrollar.</span>
           </h2>
           <p className="hero-description">
-            Soy desarrollador de software con experiencia en el desarrollo de
-            aplicaciones web, integración de bases de datos, despliegues en la
-            nube y soluciones personalizadas. Mi enfoque está en crear software
-            eficiente, escalable y adaptado a las necesidades del cliente.
+            Soy un desarrollador de software enfocado en el desarrollo de
+            aplicaciones web, integración de bases de datos y despliegues en la
+            nube. Disfruto creando soluciones eficientes y adaptadas a las
+            necesidades de cada proyecto.
           </p>
           <div className="hero-buttons">
-            <a href="/cv" className="btn">
+            <a href="/cv.pdf" target="_blank" className="btn">
               <FaDownload style={{ margin: "5px 2px 0px 0px" }} />
               CV
             </a>
