@@ -43,6 +43,7 @@ function Education({}: Props) {
           </div>
         ))}
       </div>
+      <span id="contact"></span>
     </div>
   );
 }

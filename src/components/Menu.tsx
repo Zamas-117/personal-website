@@ -1,4 +1,6 @@
 import "../css/Menu.css";
+import { FaDownload } from "react-icons/fa";
+
 type Props = {};
 
 function Menu({}: Props) {
@@ -20,9 +22,10 @@ function Menu({}: Props) {
           </p>
           <div className="hero-buttons">
             <a href="/cv" className="btn">
+              <FaDownload style={{ margin: "5px 2px 0px 0px" }} />
               CV
             </a>
-            <a href="/contact" className="btn btn-secondary">
+            <a href="#contact" className="btn btn-secondary">
               Contáctame
             </a>
           </div>
