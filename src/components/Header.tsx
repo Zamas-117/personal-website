@@ -54,7 +54,11 @@ function Header_principal({}: Props) {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link menu__link" aria-disabled="true">
+          <a
+            className="nav-link menu__link"
+            aria-disabled="true"
+            href="#contact"
+          >
             Contacto
           </a>
         </li>
