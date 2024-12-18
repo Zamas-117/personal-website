@@ -21,7 +21,7 @@ function Menu({}: Props) {
             necesidades de cada proyecto.
           </p>
           <div className="hero-buttons">
-            <a href="/cv.pdf" target="_blank" className="btn">
+            <a href="/cv-es.pdf" target="_blank" className="btn">
               <FaDownload style={{ margin: "5px 2px 0px 0px" }} />
               CV
             </a>
